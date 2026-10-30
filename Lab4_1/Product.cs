@@ -3,10 +3,10 @@
     class Product
     {
         public string Name { get; }
-        public decimal Price { get; }
+        public float Price { get; }
         public int Quantity { get; private set; }
 
-        public Product(string pdct_name, decimal pdct_price, int pdct_quantity) 
+        public Product(string pdct_name, float pdct_price, int pdct_quantity) 
         {
             Name = pdct_name;
             Price = pdct_price;

@@ -11,10 +11,10 @@ namespace Lab4_1
             //Список початкового запасу товарів
             List<Product> allProducts = new List<Product>();
 
-            allProducts.Add(new Product("Bread", 200m, rnd.Next(10, 80)));
-            allProducts.Add(new Product("Milk", 670m, rnd.Next(3, 20)));
-            allProducts.Add(new Product("Potato", 60m, rnd.Next(34, 70)));
-            allProducts.Add(new Product("Pepsi", 540m, rnd.Next(6, 60)));
+            allProducts.Add(new Product("Bread", 200f, rnd.Next(10, 80)));
+            allProducts.Add(new Product("Milk", 670f, rnd.Next(3, 20)));
+            allProducts.Add(new Product("Potato", 60f, rnd.Next(34, 70)));
+            allProducts.Add(new Product("Pepsi", 540f, rnd.Next(6, 60)));
 
 
             //Створення списку покупців
@@ -31,7 +31,7 @@ namespace Lab4_1
 
 
             //Симуляція покупок. нище створення змінної профіт магазину
-            decimal profit = 0;
+            float profit = 0;
 
             //Береться кожен покупець
             foreach (Customer customer in customers)

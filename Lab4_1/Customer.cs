@@ -3,11 +3,11 @@
     class Customer
     {
         public int Id { get; }
-        public decimal Cash { get; private set; }
+        public float Cash { get; private set; }
         public int ItemsBought { get; private set; }
-        public decimal MoneySpent { get; private set; }
+        public float MoneySpent { get; private set; }
 
-        public Customer(int cstmr_id, decimal cstmr_cash) 
+        public Customer(int cstmr_id, float cstmr_cash) 
         {
             Id = cstmr_id;
             Cash = cstmr_cash;
